@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session Storage Example</title>
+</head>
+<body>
+
+<script>
+  // Storing data in sessionStorage
+  sessionStorage.setItem('username', 'JohnDoe');
+  sessionStorage.setItem('isLoggedIn', 'true');
+
+  // Retrieving data from sessionStorage
+  const username = sessionStorage.getItem('username');
+  const isLoggedIn = sessionStorage.getItem('isLoggedIn');
+
+  // Output the retrieved data
+  console.log('Username:', username);
+  console.log('Is Logged In:', isLoggedIn);
+
+  // Removing a single item from sessionStorage
+  //sessionStorage.removeItem('isLoggedIn');
+
+  // Clearing all items from sessionStorage
+  // sessionStorage.clear();
+</script>
+
+</body>
+</html>
